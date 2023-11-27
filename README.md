@@ -182,7 +182,7 @@ The API provides endpoints for managing burger data. Here are some of the key fe
 - **GET /burgers**: Get a list of all burgers.
 - **GET /burgers/:id**: Get details of a specific burger.
 - **POST /burgers**: Add a new burger.
-- **PUT /burgers/:id**: Update information for a specific burger.
+- **PATH /burgers/:id**: Update information for a specific burger.
 - **DELETE /burgers/:id**: Delete a burger.
 
 Make sure the Burger Love frontend is configured to communicate with this API.
