@@ -1,0 +1,9 @@
+# Use a imagem oficial do MongoDB a partir do Docker Hub
+FROM mongo:latest
+
+# Exponha a porta padrão do MongoDB (27017)
+EXPOSE 27017
+
+# Configuração do banco de dados padrão
+ENV MONGO_INITDB_DATABASE bancomongo
+
