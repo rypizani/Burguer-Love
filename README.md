@@ -146,7 +146,7 @@ Before running the API, make sure you have Node.js and npm installed on your mac
 
     ```bash
      git clone https://github.com/rypizani/Burguer-Love.git
-    cd Back
+    cd Backend_API
     ```
 
 2. Build and run the MongoDB Docker container:
