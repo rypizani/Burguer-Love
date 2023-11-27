@@ -12,8 +12,8 @@ Before running the application, make sure you have Docker installed on your mach
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/rypizani/Teste-React-Mongo
-    cd burger-love
+    git clone https://github.com/rypizani/Burguer-Love.git
+    cd Front
     ```
 
 2. Install dependencies Front:
@@ -145,8 +145,8 @@ Before running the API, make sure you have Node.js and npm installed on your mac
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/rypizani/Teste-React-Mongo
-    cd api_mongoose
+     git clone https://github.com/rypizani/Burguer-Love.git
+    cd Back
     ```
 
 2. Build and run the MongoDB Docker container:
