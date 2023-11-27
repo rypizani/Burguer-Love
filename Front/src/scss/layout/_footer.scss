@@ -1,0 +1,153 @@
+.footer {
+  padding: 0 2rem 4rem;
+  background-color: $White;
+  &__container { 
+    border-bottom: .1rem solid $Black;
+    padding-bottom: 2rem;
+    &__logo {
+      position: relative;
+      padding: 2rem 1rem;
+      width: 10rem;
+      margin: 0;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $Orange;
+        z-index: -1;
+        border-radius: 0 0 10rem 10rem;
+      }
+    }
+    &__nav {
+      &__title {
+        font-weight: 600;
+        font-size: 2rem;
+        color: $Black;
+        margin: 2rem 0 1rem;
+      }
+      &__list {
+        &__item {
+          font-size: 1.6rem;
+          color: $Gray;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &__social {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    margin: 2rem 0;
+    gap: 1.5rem;
+    &__item {
+      a {
+        height: 4rem;
+        width: 4rem;
+        background-color: $Orange;
+        border-radius: 100%;
+        display: grid;
+        place-content: center;
+        font-size: 2.2rem;
+        color: $White;
+        border: .2rem solid $Orange;
+        transition-property: color backgound-color transform;
+        transition-duration: .3s;
+        &:hover {
+          transform: rotate(360deg);
+          background-color: $White;
+          color: $Orange;
+        }
+      }
+    }
+  }
+  &__copy,
+  &__development {
+    color: $Gray;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  &__development {
+    text-transform: uppercase;
+    &__cta {
+      text-transform: none;
+      font-weight: 500;
+      color: $Black;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: .2rem;
+        background-color: $Orange;
+        transition: clip-path .3s;
+        clip-path: circle(0% at 50% 50%);
+      }
+      &:hover::before {
+        clip-path: circle(70.7% at 50% 50%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    &__container {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      &__nav {
+        &__title {
+          margin: 4rem 0 2rem;
+        }
+      }
+    }
+    &__social {
+      margin: 2.5rem 0;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 0 4rem 5rem;
+    &__container {
+      &__logo {
+        width: 12rem;
+      }
+      &__nav {
+        &__title {
+          font-size: 2.5rem;
+        }
+        &__list {
+          &__item {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    &__social {
+      &__item {
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    &__copy,
+    &__development {
+      font-size: 1.6rem;
+    }
+  }
+}

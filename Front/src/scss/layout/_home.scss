@@ -1,0 +1,131 @@
+.home {
+  padding-top: 8rem;
+  position: relative;
+  display: grid;
+  gap: 7rem;
+  overflow: hidden;
+  &__info {
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 55rem;
+    margin-right: auto;
+    &__title {
+      font-weight: 800;
+      color: $Black;
+      font-size: 4rem;
+      span {
+        color: $Orange;
+      }
+    }
+    &__paragraph {
+      font-size: 1.6rem;
+      color: $Gray;
+      margin: 4rem 0;
+    }
+    &__cta {
+      background-color: $Orange;
+      font-size: 1.6rem;
+      font-weight: 600;
+      width: max-content;
+      padding: 1.3rem 4.5rem;
+      color: $White;
+      border-radius: .5rem;
+      transition-property: transform filter;
+      transition-duration: .3s;
+      filter: drop-shadow(rgba($Orange, 0.5) 0px 10px 10px);
+      &:hover {
+        transform: translateY(-.2rem);
+        filter: drop-shadow(rgba($Orange, 0.5) 0px 15px 10px);
+      }
+    }
+  }
+  &__image {
+    padding: 3rem 2rem;
+    position: relative;
+    width: 80%;
+    max-width: 55rem;
+    margin-left: auto;
+    &-img {
+      width: 100%;
+    }
+    &-effect {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 95%;
+      background-color: $Orange;
+      border-radius: 20rem 0 0 20rem;
+      z-index: -1;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15rem;
+    left: -15rem;
+    width: 40rem;
+    height: 40rem;
+    background-color: rgba($Orange, 0.35);
+    filter: blur(5rem);
+    border-radius: 100%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    &::before {
+      top: -25rem;
+      left: -10rem;
+      width: 60rem;
+      height: 60rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    &__info {
+      padding: 0;
+      padding-left: 4rem;
+      width: 100%;
+      max-width: none;
+    }
+    &__image {
+      max-width: none;
+      &-effect {
+        border-radius: 30rem 0 0 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .home {
+    &__info {
+      padding: 0;
+      padding-left: 4rem;
+      width: 100%;
+      max-width: none;
+      &__title {
+        font-size: 6rem;
+      }
+      &__paragraph {
+        font-size: 1.8rem;
+      }
+      &__cta {
+        font-size: 1.8rem;
+      }
+    }
+    &__image {
+      &-effect {
+        border-radius: 40rem 0 0 40rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.type {
+  width: max-content;
+  background-color: $White;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .8rem 1rem .8rem .8rem;
+  border-radius: 10rem;
+  box-shadow: 0px 6px 10px 0px rgba($Black, 0.25);
+  transition-property: transform .3s color;
+  transition-duration: .3s;
+  cursor: pointer;
+  &__div {
+    transition: background-color .3s;
+    background-color: $Orange;
+    border-radius: 100%;
+    padding: .7rem;
+    &__image {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+  &__name {
+    transition: color .3s;
+    font-size: 1.6rem;
+    color: $Orange;
+    font-weight: 500;
+  }
+  &:active {
+    transform: translateY(.5rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .type {
+    width: 12rem;
+    background-color: $White;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 6px 10px 0px rgba($Black, 0.25);
+    &__div {
+      background-color: $Orange;
+      border-radius: 100%;
+      padding: .7rem;
+      width: 7rem;
+      height: 7rem;
+      display: grid;
+      margin: auto;
+      &__image {
+        margin: auto;
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+    &__name {
+      font-size: 1.8rem;
+      color: $Orange;
+      font-weight: 500;
+    }
+  }
+}

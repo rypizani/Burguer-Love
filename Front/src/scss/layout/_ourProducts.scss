@@ -1,0 +1,27 @@
+.ourProducts {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: linear-gradient(0deg, $Orange 0%, rgba($Gray-light, 0.50) 100%);
+  &__swiper {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  .ourProducts {
+    margin-top: 6rem;
+    padding: 4rem;
+    &__swiper {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Swiper Library
+.swiper-pagination-bullet {
+  background-color: $White;
+}
+.swiper-pagination-bullet-active {
+  background-color: $Black;
+}
+

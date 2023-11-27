@@ -1,0 +1,11 @@
+.temporal {
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: $Black;
+}
+@media screen and (min-width: 1000px) {
+  .temporal {
+    font-size: 1.8rem;
+    padding: 2rem 5rem;
+  }
+}

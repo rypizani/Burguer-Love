@@ -1,0 +1,117 @@
+.nav {
+  position: fixed;
+  background-color: $White;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 2rem 0;
+  z-index: 10;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: clip-path .6s;
+  &__list {
+    display: grid;
+    gap: 2rem;
+    &__item {
+      &__cta {
+        font-size: 1.6rem;
+        color: $Black;
+        width: max-content;
+        padding: .8rem 3rem .8rem 0;
+        position: relative;
+        z-index: 10;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          width: 0%;
+          height: 100%;
+          background-color: $Orange;
+          z-index: -1;
+          border-radius: 0 10rem 10rem 0;
+          transition: width .3s;
+        }
+      }
+      &__cta-active {
+        font-weight: 500;
+        color: $White;
+        &::before {
+          width: 120%;
+        }
+      }
+    }
+  }
+  &__button {
+    color: $Black;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+}
+.nav-show {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    z-index: 5;
+    clip-path: none;
+    background-color: transparent;
+    &__list {
+      grid-auto-flow: column;
+      &__item {
+        &__cta {
+          color: $Black;
+          width: auto;
+          transition: color .3s;
+          padding: 0 .5rem;
+          &:hover {
+            color: $Orange;
+          }
+          &::before {
+            top: auto;
+            bottom:  0;
+            left: 0;
+            width: 100%;
+            height: .2rem;
+            border-radius: .1rem;
+            transition: clip-path .3s;
+            clip-path: circle(0% at 50% 50%);
+          }
+        }
+        &__cta-active {
+          color: $Orange;
+          &::before {
+            width: 100%;
+            clip-path: circle(70.7% at 50% 50%);
+          }
+        }
+      }
+    }
+    &__button {
+      display: none;
+    }
+  }
+  .nav-show {
+    clip-path: none;
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .nav {
+    &__list {
+      gap: 3rem;
+      &__item {
+        &__cta {
+          font-size: 1.8rem;
+          padding: 0 .7rem;
+        }
+      }
+    }
+  }
+}

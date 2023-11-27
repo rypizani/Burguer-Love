@@ -1,0 +1,10 @@
+/* MYSELF */
+Coder: Christian FL
+GitHub: https://github.com/FLCHRIS
+From: Veracruz, México
+
+/* SITE */
+Last update: 2023/08/20
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code, Windows Terminal, PowerShell

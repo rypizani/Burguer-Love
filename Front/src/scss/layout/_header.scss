@@ -1,0 +1,70 @@
+.header {
+  &__container {
+    padding: 1.5rem 2rem;
+    background-color: rgba($White, .5);
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    &-effect {
+      position: absolute;
+      background-color: $Orange;
+      width: 14rem;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 0 10rem 10rem 0;
+    }
+    &__buttons {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      gap: 4rem;
+      color: $Black;
+      &__shop {
+        font-size: 3rem;
+        cursor: pointer;
+        transition-property: transform color;
+        transition-duration: .3s;
+        &:hover {
+          color: $Orange;
+        }
+        &:active {
+          transform: translateY(.3rem);
+        }
+      }
+      &__burger {
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    &__container {
+      &__buttons {
+        &__burger {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    &__container {
+      padding: 2.5rem 4rem;
+      &-effect {
+        width: 19rem;
+      }
+      &__buttons {
+        &__shop {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}

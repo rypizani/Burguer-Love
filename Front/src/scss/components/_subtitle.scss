@@ -1,0 +1,28 @@
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: $Black;
+  position: relative;
+  margin-bottom: 4rem;
+  width: max-content;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    width: 70%;
+    height: .4rem;
+    border-radius: .2rem;
+    background-color: $Orange;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .subtitle {
+    font-size: 4rem;
+    &::before {
+      height: .5rem;
+    }
+  }
+}
