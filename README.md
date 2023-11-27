@@ -1,11 +1,13 @@
+## Burger Love
+
+Burger Love is a React TypeScript project that leverages a MongoDB database through Mongoose, all containerized with Docker. This project allows users to interact with a delightful burger-themed application.
+
+
 ![Home](https://github.com/rypizani/Burguer-Love/blob/main/img/1.png?raw=true)
 ![Home](https://github.com/rypizani/Burguer-Love/blob/main/img/2.png?raw=true)
 ![Menu](https://github.com/rypizani/Burguer-Love/blob/main/img/3.png?raw=true)
 ![Menu](https://github.com/rypizani/Burguer-Love/blob/main/img/4.png?raw=true)
 ```markdown
-# Burger Love
-
-Burger Love is a React TypeScript project that leverages a MongoDB database through Mongoose, all containerized with Docker. This project allows users to interact with a delightful burger-themed application.
 
 
 ## Installation
