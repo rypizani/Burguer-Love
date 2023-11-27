@@ -179,6 +179,7 @@ Before running the API, make sure you have Node.js and npm installed on your mac
 
 The API provides endpoints for managing burger data. Here are some of the key features:
 
+- **-	POST /auth/login: auth
 - **GET /burgers**: Get a list of all burgers.
 - **GET /burgers/:id**: Get details of a specific burger.
 - **POST /burgers**: Add a new burger.
@@ -252,12 +253,3 @@ Make sure the Burger Love frontend is configured to communicate with this API.
 ## Contributing
 
 Feel free to contribute to the API Mongoose by opening issues or creating pull requests. Your contributions are welcome!
-
-## License
-
-This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details.
-
-*Note: Ensure that you have MongoDB running locally or update the connection details in the `index.ts` file to point to your MongoDB instance.*
-```
-
-Now, users will be aware that Docker is used to containerize the MongoDB database for this project.
